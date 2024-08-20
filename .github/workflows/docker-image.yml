@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
     - name: Build the Docker image
-      run: docker build . -t temp-hugo-weni/prompt_guard:dev
+      run: docker build . -t hugocarvalhoweni/prompt-guard-dev:dev
 
     - name: Push the Docker image
-      run: docker push temp-hugo-weni/prompt_guard:dev
+      run: docker push hugocarvalhoweni/prompt-guard-dev:dev
