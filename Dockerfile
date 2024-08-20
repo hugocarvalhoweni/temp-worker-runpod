@@ -1,10 +1,10 @@
-from python:3.11.5
+FROM python:3.11.5
 
-WORKDIR /
+WORKDIR /app
 
-COPY builder/requirements.txt .
+COPY builder/requirements.txt /app/
 RUN pip install -r requirements.txt
 
-ADD src/handler.py .
+COPY src/ /app/src/
 
-CMD [ "python", "-u", "/src/handler.py" ]
+CMD [ "python", "-u", "/app/src/handler.py" ]
