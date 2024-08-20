@@ -9,7 +9,7 @@
 🚀 | A simple worker that can be used as a starting point to build your own custom RunPod Endpoint API worker.
 </div>
 
-## 📖 | Getting Started
+## 📖 | Getting Started :0
 
 1. Clone this repository.
 2. (Optional) Add DockerHub credentials to GitHub Secrets.
