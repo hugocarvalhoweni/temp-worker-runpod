@@ -5,6 +5,6 @@ WORKDIR /
 COPY builder/requirements.txt .
 RUN pip install -r requirements.txt
 
-ADD handler.py .
+ADD src/handler.py .
 
 CMD [ "python", "-u", "/src/handler.py" ]
