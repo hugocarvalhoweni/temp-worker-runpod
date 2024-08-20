@@ -1,5 +1,5 @@
 from torch.nn.functional import softmax
-from builder.model_setup import tokenizer, model
+from ..builder.model_setup import model, tokenizer
 import torch
 
 def get_class_probabilities(text, temperature=1.0, device='cpu'):

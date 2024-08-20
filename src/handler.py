@@ -4,7 +4,9 @@ from jailbreak_score import get_jailbreak_score
 def handler(job):
     job_input = job['input']
 
-    inference = round(get_jailbreak_score(job_input), 2)
+    text = job_input.get('text')
+
+    inference = round(get_jailbreak_score(text), 2)
 
     if inference >= 0.7:
         inference_classification = "Injection"
