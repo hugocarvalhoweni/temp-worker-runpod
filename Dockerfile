@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 
 ADD handler.py .
 
-CMD [ "python", "-u", "/handler.py" ]
+CMD [ "python", "-u", "/src/handler.py" ]
